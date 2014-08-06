@@ -209,3 +209,9 @@ Route::get('/debug', function() {
     echo '</pre>';
 
 });
+
+Route::get('/get-environment',function() {
+
+    echo "Environment: ".App::environment();
+
+});

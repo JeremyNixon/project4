@@ -24,6 +24,7 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
+
 $env = $app->detectEnvironment(function() {
 
     # See if there's an environment.php file...
