@@ -5,11 +5,17 @@
 		public function postCreate() {
 
 	    $user = new User();
-	    $user->fill(Input::all());
+	    $user->name = Input::get('name');
+	    $user->password = Hash::make(Input::get('password'));
+	    $user->karma = Input::get('karma');
 	    $user->save();
 
-	    return 'You have been added as a new user! Check your database to see..';
 
+
+        
+		Auth::login($user);
+
+        return Redirect::to('/')->with('flash_message', 'Welcome to Timestamp!');
 	}
 
 }

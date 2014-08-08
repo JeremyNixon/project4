@@ -46,17 +46,52 @@ Route::get('/contact', function()
 
 
 
+# Authentication *************************************************
+
+Route::get('/login', array('before' => 'guest', function() {
+            return View::make('login');
+        }
+    )
+);
+
+Route::post('/login', array( 'before' => 'csrf', function() {
+
+            $credentials = Input::only('name', 'password');
+
+            if (Auth::attempt($credentials, $remember = true)) {
+                return Redirect::intended('/')->with('flash_message', 'Welcome Back!');
+            }
+            else {
+                return Redirect::to('/login')->with('flash_message', 'Log in failed; please try again.');
+            }
+
+            return Redirect::to('login');
+        }
+    )
+);
+
+
+Route::get('/logout', function() {
+
+    # Log out
+    Auth::logout();
+
+    # Send them to the homepage
+    return Redirect::to('/');
+
+});
+
 
 # CRUD ************************************************************
 
 	# Users *******************************************************
 
 
-Route::get('user-create', function(){
-    return View::make('user-create');
-});
+Route::get('user_create', array( 'before' => 'guest', function(){
+    return View::make('user_create');
+}));
 
-Route::post('/create-user', 'UserController@postCreate');
+Route::post('/user_create', 'UserController@postCreate');
 
 Route::get('/create-user', function() {
 
@@ -115,11 +150,11 @@ Route::get('/delete-user', function() {
 
 	# Comments ****************************************************
 
-Route::get('comment_create', function(){
-    return View::make('comment_create');
-});
+Route::get('/comment_create/{id}', array('before' => 'user', function($id){
+    return View::make('comment_create')->with('id', $id);
+}));
 
-Route::post('/create-comment', 'CommentController@postCreate');
+Route::post('/create-comment/{id}', 'CommentController@postCreate');
 
 
 Route::get('/read-comment', function() {
@@ -147,7 +182,7 @@ Route::post('/create-post', 'PostController@postCreate');
 
 
 
-Route::get('/read-post', 'PostController@postRead');
+Route::get('/post/{id}', 'PostController@postRead');
 
 
 # mySQL Test ******************************************************

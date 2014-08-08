@@ -23,6 +23,8 @@ body {
 
 #header {
     height: 50px;
+    margin: 0px;
+    padding: 0px;
     background:#F0F0F0;
     border:1px solid #CCC;
     width: 100%;
@@ -38,9 +40,9 @@ body {
 
 #navlist li
 {
-display: inline;
-list-style-type: none;
-padding-right: 30px;
+    display: inline;
+    list-style-type: none;
+    padding-right: 30px;
 }
 
 
@@ -76,4 +78,37 @@ a:active {
     color: #0000FF;
     text-decoration: none;
 
+}   
+
+#post {
+  border-bottom: 3px solid #440000;
+}
+
+#comments {
+    text-align: left;
+}
+
+#post-link {
+    font-size: 25px;
+    text-align: left;
+}
+
+#create-post {
+    font-size: 18px;
+    border-bottom: 3px solid #440000;
+}
+
+.title-field {
+    width: 400px;
+    height: 30px;
+}
+
+.content-field {
+    width: 70%;
+    height: 250px;
+}
+
+.content-field-comment {
+    width: 70%;
+    height: 100px;
 }

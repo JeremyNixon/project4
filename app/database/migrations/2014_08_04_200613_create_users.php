@@ -18,7 +18,8 @@ class CreateUsers extends Migration {
 			$table->increments('id');
 			$table->string('name');
 			$table->string('password');
-			$table->integer('karma');	
+			$table->integer('karma');
+			$table->boolean('remember_token');	
 			$table->timestamps();
 		});
 

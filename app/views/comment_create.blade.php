@@ -7,29 +7,13 @@
 <h1>Add a New Comment</h1>
 
 
-	{{ Form::open(array('url' => 'create-comment', 'method' => 'POST')) }}
+	{{ Form::open(array('url' => "create-comment/$id", 'method' => 'POST')) }}
 
 
 		<div class='form-group'>
-			{{ Form::label('content') }} 
-			{{{ Form::text('content') }}}
+			{{ Form::label('content') }}<br>
+			{{ Form::textarea('content', $value = null, array('class' => 'content-field-comment', 'required' => 'required'))}}
 		</div>
-
-		<div class='form-group'>
-			{{ Form::label('user id') }} 
-			{{{ Form::text('user_id') }}}
-		</div>
-
-		<div class='form-group'>
-			{{ Form::label('post id') }} 
-			{{{ Form::text('post_id') }}}
-		</div>
-
-		<div class='form-group'>
-			{{ Form::label('votes') }} 
-			{{{ Form::text('votes') }}}
-		</div>
-
 
 		{{ Form::submit('Add') }}
 

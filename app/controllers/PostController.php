@@ -7,21 +7,18 @@
 		public function postCreate() {
 
 	    $post = new Post();
+	    $post->user_id = Auth::user()->id;
+	    $post->rating = 0;
 	    $post->fill(Input::all());
 	    $post->save();
+	    $id = $post->id;
 
-	    return 'A new post has been added! Check your database to see..';
+	    return View::make('post')->with('id', $id);
 
 	}
 
-	public function postRead(){
-
-		$collection = Post::all();
-
-		# loop through the Collection and access just the data
-		foreach($collection as $post) {
-		    echo $post->content."<br>";
+	public function postRead($id){
+		return View::make('post')->with('id', $id);
 		}  
 
-}
 }
