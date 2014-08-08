@@ -1,4 +1,13 @@
-{{ Form::open(array('url' => '/login')) }}
+@extends('base')
+@section('title')
+		<title>Login</title>
+@stop
+@section('body')
+
+<h1>Login to the site!</h1>
+
+
+	{{ Form::open(array('url' => '/login')) }}
 
 	Name:<br>
 	{{ Form::text('name') }}<br>
@@ -9,3 +18,5 @@
     {{ Form::submit('Submit') }}
 
 {{ Form::close() }}
+
+@stop

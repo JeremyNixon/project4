@@ -23,12 +23,7 @@ date_default_timezone_set ('america/new_york');
     @endif
 	<div id='header'>
 		<ul id="navlist">
-		<li><a href="/">Home</a><li>
-		<li><a href="/data">Time Data</a></li>
 		<li><a href="/discuss">Time Discussion</a></li>
-		<li><a href="/literature">The Literature</a></li>
-		<li><a href="/about">About Us</a></li>
-		<li><a href="/contact">Contact</a></li>
 		@if(Auth::check())
 			<li><a href="/logout">Logout</a></li>
 		@else
