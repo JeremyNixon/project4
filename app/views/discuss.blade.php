@@ -6,10 +6,12 @@
 
 <h1> Welcome to Time Discussion! </h2>
 
-<?php
-/* Create Post Form */
-
-		?> <div id="create-post"><a href="/post_create">Create New Post</a></div><br> <?php
+@if(Auth::check())
+<div id="create-post"><a href="/post_create">Create New Post</a></div><br>
+@else
+<p id="create-post">Login to Create New Post!</p>
+@endif
+ <?php
 
 		$collection = Post::all();
 

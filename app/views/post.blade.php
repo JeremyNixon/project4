@@ -17,14 +17,23 @@
 <?php echo $collection->content . '<br>'; ?>
 </div>
 <br><br>
+	@if(Auth::check())
+
+<h2>Comments:</h2>
 <?php
 /* Create Post Form */
 
 		?> <div id="create-comment"><a href="/comment_create/{{ $id }}">Comment on This Post</a></div><br> <?php
 
 ?>
+
+<br>
+
+	@else 
 <br>
 <h2>Comments:</h2>
+<p>Login to Comment!</p>
+	@endif
 <div id='comments'>
 <?php 
 

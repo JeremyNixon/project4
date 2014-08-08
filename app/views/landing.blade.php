@@ -8,5 +8,5 @@
 
 
 <p>Here we host discussions on time managment!</p>
-<p>Sign up, and then login to get in on the conversation.</p>
+<p>Sign up, and then login to get in on the conversation</p>
 @stop
