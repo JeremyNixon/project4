@@ -1,10 +1,10 @@
 @extends('base')
 @section('title')
-		<title>Discuss</title>
+		<title>Forum</title>
 @stop
 @section('body')
 
-<h1> Welcome to Time Discussion! </h2>
+<h1> Welcome to the Forum </h2>
 
 @if(Auth::check())
 <div id="create-post"><a href="/post_create">Create New Post</a></div><br>

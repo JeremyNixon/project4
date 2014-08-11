@@ -9,6 +9,7 @@
 body {
 
 	font-family: 'Merriweather', serif;
+    margin: 0px;
 	
 }
 
@@ -21,11 +22,23 @@ body {
     width: 70%;
 }
 
+#landing-header {
+    height: 500px;
+    margin: 0 auto;
+    padding: 0px;
+    background: #f3f3f3;
+    border:1px solid #CCC;
+    width: 90%;
+    position: fixed;
+    text-align: center;
+    top: 0px;
+}
+
 #header {
     height: 50px;
     margin: 0px;
     padding: 0px;
-    background:#F0F0F0;
+    background: #f3f3f3;
     border:1px solid #CCC;
     width: 100%;
     position: fixed;
@@ -36,6 +49,18 @@ body {
 #footer {
 	background:#f0f0f0;
 	bottom: 0px;
+}
+
+#head-image-left
+{
+    float: left;
+    height: 400px;
+}
+
+#head-image-right
+{
+    float: right;
+    height: 400px;
 }
 
 #navlist li
