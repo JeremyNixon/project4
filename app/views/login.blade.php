@@ -4,7 +4,7 @@
 @stop
 @section('body')
 
-<h1>Login to the site!</h1>
+<h1>Login!</h1>
 
 
 	{{ Form::open(array('url' => '/login')) }}

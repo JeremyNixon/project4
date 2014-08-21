@@ -22,7 +22,7 @@
 	    $user = new User();
 	    $user->name = Input::get('name');
 	    $user->password = Hash::make(Input::get('password'));
-	    $user->karma = Input::get('karma');
+	    $user->karma = 0;
 	    $user->save();
 
 

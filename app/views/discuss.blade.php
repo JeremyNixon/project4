@@ -9,7 +9,7 @@
 @if(Auth::check())
 <div id="create-post"><a href="/post_create">Create New Post</a></div><br>
 @else
-<p id="create-post">Login to Create New Post!</p>
+<p id="create-post">Login to Create a New Post!</p>
 @endif
  <?php
 
@@ -18,7 +18,9 @@
 		# loop through the Collection and access just the data
 		?> <div id="post-link"> <?php
 		foreach($collection as $post) {
-		    echo  "<a href=\"/post/" . $post->id . "\">" . $post->title . "</a>" . "<br><br>";
+			?><div class="individual-post"><?php
+		    echo  "<a href=\"/post/" . $post->id . "\">" . $post->title . "</a>" . $post->author ."<br><br>";
+		    ?></div><?php
 		}
 		?></div><?php
 

@@ -3,26 +3,22 @@
 		<title>Create User</title>
 @stop
 @section('body')
+<div class="form-container">
+<p class="create-user-title">Become a New User<p>
 
-<h1>Become a New User</h1>
-
-
+	
 	{{ Form::open(array('url' => 'user_create', 'method' => 'POST')) }}
 
 		
 		<div class='form-group'>
-			{{ Form::label('Name') }} 
-			{{ Form::text('name') }}
+			{{ Form::label('Name') }}<br>
+			{{ Form::text('name') }}<br><br>
 		</div>
 
 		<div class='form-group'>
-			{{ Form::label('Password') }} 
+			{{ Form::label('Password') }}<br>
 			{{ Form::text('password') }}
-		</div>
-
-		<div class='form-group'>
-			{{ Form::label('Karma') }} 
-			{{ Form::text('karma') }}
+			{{ Form::label('(>6 characters)') }} <br><br>
 		</div>
 
 
@@ -30,5 +26,5 @@
 		{{ Form::submit('Add') }}
 
 	{{ Form::close() }}
-
+	</div>
 @stop
