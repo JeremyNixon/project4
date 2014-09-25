@@ -14,7 +14,7 @@
 	<div class="contact-awais">
 		<p>Awais Hussain<p>
 			<img class="contact-picture" src="{{ URL::asset('/awais.jpg') }}">
-		<div class="contact-email">ahussain3@college.harvard.edu</div>		
+		<div class="contact-email-awais">ahussain3@college.harvard.edu</div>		
 	</div>
 </div>
 @stop
