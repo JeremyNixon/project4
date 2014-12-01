@@ -111,10 +111,10 @@ a:visited{
 /* Possibilities Page */
 
 #possibilities-container{
-	float: left;
-	position: absolute;
+	float: center;
+	margin: 0 auto;
 	top: 65px;
-	margin-left: 150px;
+	margin-top: 20px;
 	padding: 20px;
 	width: 60%;
 	background-color: #fff;

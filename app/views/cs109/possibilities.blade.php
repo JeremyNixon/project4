@@ -2,7 +2,7 @@
 @section('body')
 	<div id="possibilities-container">
 		<div class="possibilities-section">
-			<strong>Our wonderful group!</strong><br><br>
+			<strong>Our group!</strong><br><br>
 			Jasmine Griffin<br>
 			Lillian Zuo<br>
 			David Freed<br>
