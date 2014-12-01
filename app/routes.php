@@ -18,7 +18,7 @@ Route::get('/testing', function()
 
 Route::get('/', function()
 {
-	return View::make('landing');
+	return View::make('cs109/home');
 });
 
 Route::get('/data', function()
@@ -46,8 +46,30 @@ Route::get('/contact', function()
 	return View::make('contact');
 });
 
-# Create Form Views ******************************************************
+# Quiz, intended to be 109 project ******************************************************
 
+Route::get('/cs109', function(){
+    return View::make('/cs109/home');
+});
+
+Route::get('/cs109/take', function(){
+    return View::make('/cs109/take');
+});
+
+Route::post('/cs109/take', 'quizController@postCreate');
+
+
+Route::get('/cs109/test', function(){
+    return View::make('/cs109/test');
+});
+
+Route::get('/cs109/process', function(){
+    return View::make('/cs109/process');
+});
+
+Route::get('/cs109/possibilities', function(){
+    return View::make('/cs109/possibilities');
+});
 
 
 
