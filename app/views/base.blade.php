@@ -11,7 +11,8 @@ date_default_timezone_set ('america/new_york');
 	@section('head')
 		<link rel=stylesheet type="text/css" href="{{ URL::asset('/style.css') }}">
 		<link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
-		
+
+			
 		
 	@show
 
@@ -22,12 +23,14 @@ date_default_timezone_set ('america/new_york');
         <div class='flash-message'>{{ Session::get('flash_message') }}</div>
     @endif
 	<div id='header'>
+		<img class="logo" src="{{ URL::asset('/logo.png') }}">
+		<!-- <div class="announce" href="/">Timestamp Tracking</div> -->
 		<ul id="navlist">
 		<li><a href="/">Data Science</a></li>
 		<li><a href="/discuss">Time Discussion</a></li>
 		<li><a href="/about">About</a></li>
 		<li><a href="/contact">Contact</a></li>
-		@if(Auth::check())
+		<!-- @if(Auth::check())
 			<li><a href="/logout">Logout</a></li>
 		@else
 		<li><a href="/user_create">Sign Up</a>|<a href="/login">Login</a></li>
@@ -35,7 +38,7 @@ date_default_timezone_set ('america/new_york');
 
 		@if(Auth::check())
     		<li>Hello {{ Auth::user()->name; }}!</li>
-		@endif 
+		@endif  -->
 		
 
 		</ul>

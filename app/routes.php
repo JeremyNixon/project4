@@ -11,6 +11,11 @@
 |
 */
 
+Route::get('/testing', function()
+{
+    return View::make('testing');
+});
+
 Route::get('/', function()
 {
 	return View::make('landing');

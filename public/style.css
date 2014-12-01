@@ -12,7 +12,7 @@ body {
     margin: 0px;
 	
 }
-
+/* blade base template*/
 #container
 {
     text-align: center;
@@ -42,9 +42,24 @@ body {
     border:1px solid #CCC;
     width: 100%;
     position: fixed;
-    text-align: center;
+    text-align: right;
     top: 0px;
     vertical-align: center;
+}
+
+.logo{
+    height: 40px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.announce{
+    text-align: left;
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 80px;
+    font-size: 20px;
 }
 
 #footer {
@@ -125,6 +140,8 @@ a:active {
     font-size: 30px;
     font-weight: bold;
 }
+
+
 /* Home Page */
 .home-banner{
     width: 100%;
@@ -139,13 +156,14 @@ a:active {
 .welcome-banner{
     font-size: 30px;
     font-weight: bold;
-    color: #000;
+    color: #881111;
     margin-bottom: 10px;
 }
 
 .welcome-information{
     font-size: 17px;
     font-weight: italic;
+    font-family: ;
     color:;
 }
 
@@ -278,6 +296,7 @@ a:active {
     font-size: 25px;
     float: right;
     margin-right: 50px;
+    text-align: center;
 }
 
 .about-content{
@@ -321,6 +340,27 @@ a:active {
     width: 35%;
 
 }
+
+.contact-email-awais{
+    margin-left: -10px;
+}
 .contact-picture{
     height: 200px;
+}
+
+
+/*Testing
+*/
+
+.looks-like{
+    font-family: 'Merriweather', georgia;
+    color: #7d85e8;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 25px;
+
+}
+
+.calendar-picture{
+    
 }
