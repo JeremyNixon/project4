@@ -1,14 +1,15 @@
-body{
+body {
 	padding: 0;
 	margin: 0;
 	margin-top: 60px;
-	background-color: #efefef;
-	font-family: georgia;
+	background-color: #fff;
+	/*background-color: #efefef;*/
+	font-family: 'Muli', sans-serif;
 }
 
 #header{
 	text-align: center;
-	background-color: #223344;
+	background-color: #222222;
 	height: 50px;
 	vertical-align: top;
 	position: absolute;
@@ -36,12 +37,13 @@ a:visited{
 	text-decoration: none;
 }
 
-/* Quiz styling */
+/* 109 styling */
 
 #heading{
 	text-align: center;
 	font-style: italic;
 }
+
 #container{
 	margin: 0 auto;
 	position: ;
@@ -71,7 +73,7 @@ a:visited{
 	color: #000;
 }
 
-/* Quiz Processing Page */
+/* Make Me Popular Page */
 .explaination{
 	float: center;
 	margin: 0 auto;
@@ -135,16 +137,34 @@ a:visited{
 	margin: 0 auto;
 	padding: 15px;
 	width: 70%;
-	background-color: #fff;
-	border: 1px solid #000;
-    border-radius: 10px;
+	font-size: 18px;
+	/*background-color: #fff;*/
+	/*border: 1px solid #000;*/
+    /*border-radius: 10px;*/
 }
 .home-title{
-	font-size: 25px;
+	font-size: 30px;
 	text-align: center;
 }
-.home-text{
-	font-size: 18px;
+.home-text1{
+	text-align: center;
+	margin: 0 auto;
+	font-size: 25px;
+	color: #999999;
+}
+
+.home-text1{
+	text-align: center;
+	margin: 0 auto;
+	font-size: 25px;
+	color: #999999;
+}
+
+.home-text2{
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20px;
+	width: 70%
 }
 .quiz-button{
 	text-align: center;
@@ -155,4 +175,77 @@ a:visited{
 	width: 18%;
 	padding-top: 10px;
 	border-top: solid 1px #223344;
+}
+
+.text1{
+	height: 400px;
+	margin-top: 20px;
+	margin-right: 20px;
+	font-size: 40px;
+	margin-left: 20px;
+	float: right;
+	width: 55%;
+
+
+}
+
+.text2{
+	height: 400px;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 40px;
+	margin-right: 20px;
+	float: left;
+	width: 55%;
+
+}
+
+.text3{
+	height: 400px;
+	margin-top: 20px;
+	margin-right: 20px;
+	font-size: 40px;
+	margin-left: 20px;
+	float: right;
+	width: 55%;
+
+}
+
+.inline1{
+	text-align: center;
+	height: 400px;
+	margin-top: 20px;
+	margin-left: 20px;
+	float: left;
+	width: 40%;
+}
+
+.inline2{
+	text-align: center;
+	height: 400px;
+	margin-top: 20px;
+	float: right;
+	margin-right: 20px;
+	width: 40%;
+
+}
+
+.inline3{
+	text-align: center;
+	height: 400px;
+	margin-top: 20px;
+	float: left;
+	margin-left: 20px;
+	width: 40%;
+
+}
+
+.title{
+	text-align: center;
+	font-size: 50px;
+	color: #555555;
+	font-family: 'Lato';
+	width: 100%;
+	position: relative;
+	margin-top: 50px;
 }

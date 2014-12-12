@@ -1,3 +1,4 @@
+
 <?php
 
 /*
@@ -43,10 +44,10 @@ Route::get('/about', function()
 
 Route::get('/contact', function()
 {
-	return View::make('contact');
+    return View::make('contact');
 });
 
-# Quiz, intended to be 109 project ******************************************************
+#CS 109 project ******************************************************
 
 Route::get('/cs109', function(){
     return View::make('/cs109/home');
@@ -71,6 +72,17 @@ Route::get('/cs109/possibilities', function(){
     return View::make('/cs109/possibilities');
 });
 
+Route::get('/cs109/topic1', function(){
+    return View::make('/cs109/topic1');
+});
+
+Route::get('/cs109/topic2', function(){
+    return View::make('/cs109/topic2');
+});
+
+Route::get('/cs109/topic3', function(){
+    return View::make('/cs109/topic3');
+});
 
 
 # Authentication *************************************************

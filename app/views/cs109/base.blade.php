@@ -10,21 +10,25 @@ date_default_timezone_set ('america/new_york');
 <head>
 		@yield('title')
 		@section('head')
-				<link rel=stylesheet type="text/css" href="{{ URL::asset('/quiz-style.css') }}">
+		<link rel=stylesheet type="text/css" href="{{ URL::asset('/cs109-style.css') }}">
+		<link href='http://fonts.googleapis.com/css?family=Muli:300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 		@show
 </head>
 <div id="header">
 		<ul id="navlist">
-			<li><a href="/cs109/">Home</a><li>
-			<li><a href="/cs109/take">Make me Popular!</a><li>
-			<li><a href="/cs109/possibilities">About Us</a><li>
+			<li><a style="color: #fff;" href="/cs109/">Home</a><li>
+			<li><a style="color: #fff;" href="/cs109/topic1">Topic 1</a><li>
+			<li><a style="color: #fff;" href="/cs109/topic2">Topic 2</a><li>
+			<li><a style="color: #fff;" href="/cs109/topic3">Topic 3</a><li>
+			<li><a style="color: #fff;text-align: right;" href="/cs109/possibilities">iPython Notebook</a><li>
 		</ul>
 </div>
 	
 <body>
 		@yield('body')
-<?php 
+<?php
 
 
 
