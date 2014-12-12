@@ -178,36 +178,39 @@ a:visited{
 }
 
 .text1{
-	height: 400px;
+	height: 300px;
 	margin-top: 20px;
 	margin-right: 20px;
 	font-size: 40px;
 	margin-left: 20px;
 	float: right;
 	width: 55%;
-
+	vertical-align: middle;
+	padding-top: 100px;
 
 }
 
 .text2{
-	height: 400px;
+	height: 300px;
 	margin-top: 20px;
 	margin-left: 20px;
 	font-size: 40px;
 	margin-right: 20px;
 	float: left;
 	width: 55%;
+	padding-top: 100px;
 
 }
 
 .text3{
-	height: 400px;
+	height: 300px;
 	margin-top: 20px;
 	margin-right: 20px;
 	font-size: 40px;
 	margin-left: 20px;
 	float: right;
 	width: 55%;
+	padding-top: 100px;
 
 }
 
@@ -248,4 +251,12 @@ a:visited{
 	width: 100%;
 	position: relative;
 	margin-top: 50px;
+}
+
+.topic-information{
+	width: 60%;
+	font-size: 24px;
+	text-align: center;
+	margin: auto;
+	padding-top: 50px;
 }

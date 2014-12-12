@@ -84,6 +84,12 @@ Route::get('/cs109/topic3', function(){
     return View::make('/cs109/topic3');
 });
 
+Route::get('/cs109/topic4', function(){
+    return View::make('/cs109/topic4');
+});
+
+
+
 
 # Authentication *************************************************
 

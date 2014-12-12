@@ -9,33 +9,39 @@
 	<div class="home-text1">Can songs be sorted into genres based on their frequency distribution?</div>
 	</div>
 
-	<div class="title">Title: Area of analysis 1</div>
+	<div class="title">Varying Music Tastes over 10 Years</div>
 	<div class="home-text2">
 	{{--The takeaways for the project can be grouped in the aforementioned categories.--}}
-	{{--From our historical analysis, we inferred that the spread of mean frequencies among the most popular songs is roughly the same every year.--}}
+	{{--From our historical analysis, we inferbet
+	ed that the spread of mean frequencies among the most popular songs is roughly the same every year.--}}
 	</div>
 	<img class="inline1" src="{{ URL::asset('/inline1.png') }}">
 
 	<div class="text1">
-	One to three sentences posing out question, method of analysis, and our conclusion. <br>More information can be found here: <a style="color: #000;" href="/cs109/topic1">Topic 1</a>
-
+		Our analysis demonstrated consistency in the frequencies of popular songs within but not across different years.
 	</div>
 
-<div class="title">Title: Area of analysis 2</div>
+<div class="title">Popular v. Classical Songs</div>
 
 	<img class="inline2" src="{{ URL::asset('/inline2.png') }}">
 
 	<div class="text2">
-		One to three sentences posing out question, method of analysis, and our conclusion.<br>More information can be found here: <a href="/cs109/topic2">Topic 2</a>
-
+		Vast differences in the composition of popular and classical songs helped us create a model that perfectly sorted classical and popular songs.
 	</div>
-<div class="title">Title: Area of analysis 3</div>
+<div class="title">Genre Classification</div>
 
 	<img class="inline3" src="{{ URL::asset('/inline3.png') }}">
 
 	<div class="text3">
-		One to three sentences posing out question, method of analysis, and our conclusion.<br>More information can be found here: <a href="/cs109/topic3">Topic 3</a>
-	</div>
+		Our analysis demonstrated significant aural similarities among different genres and illustrated that a song's artist is not predictive of its genre.	</div>
+
+<div class="title">Arbitrary Popularity</div>
+
+<img class="inline2" src="{{ URL::asset('/inline2.png') }}">
+
+<div class="text2">
+	After running tests on pairs of popular and unpopular songs, we discovered no measurable difference in the aural content of the music.
+</div>
 </div>
 <div class="title">Conclusions</div>
 

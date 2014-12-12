@@ -19,10 +19,11 @@ date_default_timezone_set ('america/new_york');
 <div id="header">
 		<ul id="navlist">
 			<li><a style="color: #fff;" href="/cs109/">Home</a><li>
-			<li><a style="color: #fff;" href="/cs109/topic1">Topic 1</a><li>
-			<li><a style="color: #fff;" href="/cs109/topic2">Topic 2</a><li>
-			<li><a style="color: #fff;" href="/cs109/topic3">Topic 3</a><li>
-			<li><a style="color: #fff;text-align: right;" href="/cs109/possibilities">iPython Notebook</a><li>
+			<li><a style="color: #fff;" href="/cs109/topic1">Historical Frequencies</a><li>
+			<li><a style="color: #fff;" href="/cs109/topic2">Popular v. Classical Songs</a><li>
+			<li><a style="color: #fff;" href="/cs109/topic3">Genre Classification</a><li>
+			<li><a style="color: #fff;" href="/cs109/topic4">Arbitray Popularity</a><li>
+			<li><a style="color: #fff;text-align: right;" href="https://github.com/JeremyNixon/CS-109-Final-Project">iPython Notebook</a><li>
 		</ul>
 </div>
 	
