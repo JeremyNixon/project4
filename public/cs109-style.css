@@ -266,3 +266,8 @@ a:visited{
 	text-align: center;
 	color: black;
 }
+
+.screencast{
+	float: center;
+	margin: auto;
+}
