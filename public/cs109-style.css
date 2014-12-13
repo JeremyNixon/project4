@@ -9,6 +9,7 @@ body {
 
 #header{
 	text-align: center;
+	font-size: 14px;
 	background-color: #222222;
 	height: 50px;
 	vertical-align: top;
@@ -17,7 +18,6 @@ body {
 	border-bottom: 1px solid #000;
 	/* 00ffcc */
 	width: 100%;
-	font-size: 18px;
 }
 
 #navlist li{
@@ -259,4 +259,10 @@ a:visited{
 	text-align: center;
 	margin: auto;
 	padding-top: 50px;
+}
+
+.read-more{
+	font-size: 20px;
+	text-align: center;
+	color: black;
 }

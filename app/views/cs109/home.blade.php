@@ -10,15 +10,10 @@
 	</div>
 
 	<div class="title">Varying Music Tastes over 10 Years</div>
-	<div class="home-text2">
-	{{--The takeaways for the project can be grouped in the aforementioned categories.--}}
-	{{--From our historical analysis, we inferbet
-	ed that the spread of mean frequencies among the most popular songs is roughly the same every year.--}}
-	</div>
 	<img class="inline1" src="{{ URL::asset('/inline1.png') }}">
 
 	<div class="text1">
-		Our analysis demonstrated consistency in the frequencies of popular songs within but not across different years.
+		Our analysis demonstrated consistency in the frequencies of popular songs within but not across different years.<br>
 	</div>
 
 <div class="title">Popular v. Classical Songs</div>
@@ -26,7 +21,7 @@
 	<img class="inline2" src="{{ URL::asset('/inline2.png') }}">
 
 	<div class="text2">
-		Vast differences in the composition of popular and classical songs helped us create a model that perfectly sorted classical and popular songs.
+		Vast differences in the composition of popular and classical songs helped us create a model that perfectly sorted classical and popular songs.<a style href="url">link text</a>
 	</div>
 <div class="title">Genre Classification</div>
 
