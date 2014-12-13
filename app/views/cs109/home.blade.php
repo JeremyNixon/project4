@@ -30,19 +30,18 @@
 	</div>
 <div class="title">Genre Classification</div>
 
-	<img class="inline3" src="{{ URL::asset('/inline3.png') }}">
+	<img class="inline3" src="{{ URL::asset('/inline4.png') }}">
 
 	<div class="text3">
 		Our analysis demonstrated significant aural similarities among different genres and illustrated that a song's artist is not predictive of its genre.	</div>
 
 <div class="title">Arbitrary Popularity</div>
 
-<img class="inline2" src="{{ URL::asset('/inline2.png') }}">
+<img class="inline2" src="{{ URL::asset('/inline5.png') }}">
 
 <div class="text2">
 	After running tests on pairs of popular and unpopular songs, we discovered no measurable difference in the aural content of the music.
 </div>
 </div>
-<div class="title">Conclusions</div>
 
 @stop
